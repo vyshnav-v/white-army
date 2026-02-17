@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
+/* Tailwind v4: dark variant must match .dark on ancestor so dark: utilities work */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ============================================
+   CENTRALIZED COLOR SYSTEM
+   Change colors here to update entire app
+   ============================================ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Brand Colors - CHANGE THESE to update your brand */
+  --color-primary: 217 91% 55%;
+  --color-primary-foreground: 0 0% 100%;
+
+  /* Secondary Colors */
+  --color-secondary: 214 32% 91%;
+  --color-secondary-foreground: 222 47% 11%;
+
+  /* Background Colors */
+  --color-background: 0 0% 100%;
+  --color-foreground: 222 47% 11%;
+
+  /* Card Colors */
+  --color-card: 0 0% 100%;
+  --color-card-foreground: 222 47% 11%;
+
+  /* Muted/Subtle Colors */
+  --color-muted: 210 40% 96%;
+  --color-muted-foreground: 215 20% 40%;
+
+  /* Border Colors */
+  --color-border: 214 32% 91%;
+  --color-input: 214 32% 91%;
+
+  /* Semantic Colors */
+  --color-destructive: 0 84% 60%;
+  --color-destructive-foreground: 0 0% 100%;
+
+  --color-success: 142 76% 36%;
+  --color-success-foreground: 0 0% 100%;
+
+  --color-warning: 38 92% 50%;
+  --color-warning-foreground: 0 0% 100%;
+
+  /* Radius */
+  --radius: 0.5rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ============================================
+   DARK MODE COLORS
+   ============================================ */
+
+.dark {
+  color-scheme: dark;
+  --color-primary: 217 91% 60%;
+  --color-primary-foreground: 0 0% 100%;
+  --color-background: 240 10% 4%;
+  --color-foreground: 0 0% 98%;
+  --color-card: 240 10% 10%;
+  --color-card-foreground: 0 0% 98%;
+  --color-muted: 240 4% 16%;
+  --color-muted-foreground: 240 5% 65%;
+  --color-border: 240 4% 16%;
+  --color-input: 240 4% 16%;
+  --color-secondary: 240 4% 16%;
+  --color-secondary-foreground: 0 0% 98%;
 }
 
+/* System preference support */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not(.light) {
+    color-scheme: dark;
+    --color-primary: 217 91% 60%;
+    --color-primary-foreground: 0 0% 100%;
+    --color-background: 240 10% 4%;
+    --color-foreground: 0 0% 98%;
+    --color-card: 240 10% 10%;
+    --color-card-foreground: 0 0% 98%;
+    --color-muted: 240 4% 16%;
+    --color-muted-foreground: 240 5% 65%;
+    --color-border: 240 4% 16%;
+    --color-input: 240 4% 16%;
+    --color-secondary: 240 4% 16%;
+    --color-secondary-foreground: 0 0% 98%;
   }
 }
 
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-foreground));
+  font-family:
+    var(--font-roboto),
+    system-ui,
+    -apple-system,
+    sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Malayalam: prioritize Noto Sans Malayalam when language is Malayalam */
+html[lang="ml"] body {
+  font-family:
+    var(--font-noto-malayalam),
+    var(--font-roboto),
+    system-ui,
+    sans-serif;
 }

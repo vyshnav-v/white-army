@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "bloodDonors": "Blood Donors",
+    "library": "Library",
+    "jobs": "Jobs",
+    "workers": "Workers",
+    "videos": "Videos",
+    "news": "News",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "register": "Register",
+    "dashboard": "Dashboard"
+  },
+  "home": {
+    "heroSubtitle": "— Unity through arts, sports & community. Serving our village for over {years} years.",
+    "joinCommunity": "Join Our Community",
+    "findBloodDonors": "Find Blood Donors",
+    "stats": {
+      "activeMembers": "Active Members",
+      "bloodDonors": "Blood Donors",
+      "eventsOrganized": "Events Organized",
+      "sportsTournaments": "Sports Tournaments"
+    },
+    "featuresTitle": "Everything Your Village Needs",
+    "featuresSubtitle": "Access essential services and resources all in one place",
+    "explore": "Explore",
+    "features": {
+      "bloodDonors": {
+        "name": "Blood Donor Directory",
+        "description": "Find blood donors in your village quickly during emergencies"
+      },
+      "library": {
+        "name": "Digital Library",
+        "description": "Access books, educational materials, and digital resources"
+      },
+      "jobs": {
+        "name": "Job Board",
+        "description": "Discover local job opportunities and career resources"
+      },
+      "workers": {
+        "name": "Workers Directory",
+        "description": "Connect with local service providers and skilled workers"
+      },
+      "videos": {
+        "name": "Video Gallery",
+        "description": "Watch educational videos, cultural programs, and tutorials"
+      },
+      "news": {
+        "name": "News & Events",
+        "description": "Stay updated with village news, announcements, and events"
+      }
+    },
+    "ctaTitle": "Ready to Make a Difference?",
+    "ctaSubtitle": "Join {shortName} and help strengthen {village} village",
+    "getStarted": "Get Started Today",
+    "aboutTitle": "About {clubName}",
+    "aboutIntro": "{clubName} has been a pillar of {village} village for over {years} years. What began as a small initiative with children and their parents, supported by the village community, has grown into an inclusive organization serving all ages—children, youth, elders, men, and women.",
+    "aboutPrinciple": "Our foundation is built on a simple principle:",
+    "aboutPrincipleBold": "no politics, no religion, no caste",
+    "aboutPrincipleEnd": "Everyone is equal here. We remain committed to serving {village} and will continue to do so for generations to come.",
+    "learnMore": "Learn More About Us",
+    "yearsOfService": "Years of Service",
+    "officiallyRegistered": "Officially Registered",
+    "activeMembers": "Active Members",
+    "keyServices": "Key Services"
+  },
+  "footer": {
+    "tagline": "Serving {village} for over {years} years. A community built on unity—no politics, no religion, no caste. Everyone is equal here.",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "bloodDonors": "Blood Donors",
+    "digitalLibrary": "Digital Library",
+    "jobBoard": "Job Board",
+    "workersDirectory": "Workers Directory",
+    "newsEvents": "News & Events",
+    "contactUs": "Contact Us",
+    "copyright": "© {year} {clubName}, {village}. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "about": {
+    "backToHome": "Back to Home",
+    "subtitle": "— Building unity through arts, sports, and community since {year}",
+    "ourStory": "Our Story",
+    "ourStoryP1": "{clubName} began over {years} years ago as a humble initiative in {village} village. It started with a small group of children and their parents, supported wholeheartedly by the village community. What emerged from that grassroots effort is today a thriving organization that brings together people of all ages—children, youth, elders, men, and women—to grow, learn, and serve together.",
+    "ourStoryP2": "The club was officially registered in {year}, formalizing our commitment to the village. Through arts, sports, education, and community service, we continue to strengthen the bonds that make {village} a vibrant place to live.",
+    "ourValues": "Our Values",
+    "ourValuesIntro": "Our foundation rests on principles that transcend divisions. We believe that when people come together without barriers, great things happen.",
+    "noPolitics": "No Politics",
+    "noPoliticsDesc": "We remain independent of any political party. Our focus is solely on community and village welfare.",
+    "noReligion": "No Religion or Caste",
+    "noReligionDesc": "Everyone is equal here. We welcome all, regardless of religion, caste, or background.",
+    "unityDiversity": "Unity in Diversity",
+    "unityDiversityDesc": "Children, youth, elders, men, and women—all growing together as one community.",
+    "ourMission": "Our Mission",
+    "ourMissionP": "{clubName} is dedicated to serving {village} village. From blood donation drives and job connections to educational resources and cultural events, we work to make our village a better place for everyone. We will continue this work with the same spirit of unity and service for generations to come.",
+    "keyMilestones": "Key Milestones",
+    "established": "Established",
+    "establishedDesc": "~{years} years ago — Started with children and village support",
+    "registered": "Registered",
+    "registeredDesc": "{year} — Formally registered as a club",
+    "joinCommunity": "Join Our Community"
+  },
+  "auth": {
+    "welcomeBack": "Welcome Back",
+    "signInTo": "Sign in to your {shortName} account",
+    "email": "Email Address",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign In",
+    "signingIn": "Signing in...",
+    "noAccount": "Don't have an account?",
+    "registerHere": "Register here"
+  }
+}
